@@ -7,7 +7,7 @@ onload = function () {
   ];
   
   const renderGoodsItem = (title = 'Товар', price = 'Цена') => 
-    `<div class="goods-item"><h3>${title}</h3><p>${price}</p></div>`;
+    `<div class="goods-item"><h3 class="item_h3">${title}</h3><p>${price}</p></div>`;
   
   const renderGoodsList = (list = goods) => {
     const goodsList = list.map(item => renderGoodsItem(item.title, item.price));
